@@ -1,4 +1,4 @@
-#+TITLE: Gaps in my knowledge, and how I might fill it in.
+#+TITLE: Gaps in my knowledge and how I might fill them in.
 #+SUBTITLE: I've been learning software development for over 6 months now and I've been made aware of some areas where my knowledge could be better.
 #+DATE: 2021-09-14
 #+TAGS: programming
