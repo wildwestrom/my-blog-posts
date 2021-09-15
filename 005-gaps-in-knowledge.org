@@ -4,9 +4,9 @@
 #+TAGS: programming
 #+ID: gaps-in-knowledge
 
-  It seems every time I begin to cross the boundary from hack to professional, I begin to realize just how little I know about what I've been learning (See: [[https://en.wikipedia.org/wiki/Four_stages_of_competence][Four stages of Competence]]).
+It seems every time I begin to cross the boundary from hack to professional, I begin to realize just how little I know about what I've been learning (See: [[https://en.wikipedia.org/wiki/Four_stages_of_competence][Four stages of Competence]]).
 
-  In this blog, I'll list all the areas I'm still not familiar with in the software world and what little I do know about them. Keep in mind, this is coming from someone who's first main language is Clojure.
+In this blog, I'll list all the areas I'm still not familiar with in the software world and what little I do know about them. Keep in mind, this is coming from someone who's first main language is Clojure.
 
 * How I usually learn
   Maybe it's a good idea to take a second and reflect on how I learn things. I usually like to look at best-practices from multiple sources before I even start. The reason I do this is to avoid forming bad habits from the beginning. Now I don't care if I become opinionated, as long my opinions are based on reality and correct.
@@ -21,9 +21,9 @@
 
    One such standard of ethics is what Uncle Bob cites as the Scribe's Oath. Here is the third clause in this oath.
 
- #+begin_quote
- 3. I will produce, with each release, a quick, sure, and repeatable proof that every element of the code works as it should.
- #+end_quote
+   #+begin_quote
+   I will produce, with each release, a quick, sure, and repeatable proof that every element of the code works as it should.
+   #+end_quote
 
    This is used to justify the absolute necessity test-driven development. Uncle Bob would rather a world where no code is ever checked in without tests.
 
@@ -87,9 +87,9 @@
    User p-himlik on the Clojurians Slack pointed me to [[https://github.com/plumatic/eng-practices/blob/master/clojure/20130926-data-representation.md][this repository]] written by [[https://github.com/w01fe][Jason Wolfe]]. It gives an overview of the various object-like macros within Clojure.
 
    #+begin_quote
-  In Clojure, there are a potentially daunting number of ways to represent a slice of data that would have been an Object in an OO-land.
-  ...
-  [T]he whole reason we care about data representation is because we want to make it easy to do the operations we want on our data -- thus, it makes no sense to think about data in the absence of functions. A complicating factor is that we sometimes want these functions to be polymorphic -- that is, work (differently) across a variety of different data types. -- Jason Wolfe
+   In Clojure, there are a potentially daunting number of ways to represent a slice of data that would have been an Object in an OO-land.
+   ...
+   [T]he whole reason we care about data representation is because we want to make it easy to do the operations we want on our data -- thus, it makes no sense to think about data in the absence of functions. A complicating factor is that we sometimes want these functions to be polymorphic -- that is, work (differently) across a variety of different data types. -- Jason Wolfe
    #+end_quote
 
    If I'm being honest, I really have a lot of trouble wrapping my head around OOP concepts. I have yet to understand how to use protocols, records, or multi-methods in a useful way.
@@ -100,7 +100,7 @@
 *** Encapsulation
     Stuart Sierra made a great video talking about this in his talk /"[[https://youtu.be/13cmHf_kt-Q][Components: Just Enough Structure]]"/. He argues that there are certain circumstances where certain features of objects, can be useful in avoiding scattering global state all over a large application. By encapsulating state locally within a component, which is very much like an object, it's much easier to reason about static configuration and state.
 
-     I may not recommend using [[https://github.com/stuartsierra/component][component]], as even Mr. Sierra himself admits that this requires whole-project buy-in from the start. There are some problems with this approach, and so a library with a similar idea called [[https://github.com/tolitius/mount][mount]] came about to deal with some of [[https://github.com/tolitius/mount/blob/master/doc/differences-from-component.md][component's downsides]].
+    I may not recommend using [[https://github.com/stuartsierra/component][component]], as even Mr. Sierra himself admits that this requires whole-project buy-in from the start. There are some problems with this approach, and so a library with a similar idea called [[https://github.com/tolitius/mount][mount]] came about to deal with some of [[https://github.com/tolitius/mount/blob/master/doc/differences-from-component.md][component's downsides]].
 
 ** Specs and Types
    It seems like type checking is largely unnecessary in Clojure. The idea of being able to check for certain classes of bugs and errors at compile time is often cited as a reason people advocate for strong typing. Projects like [[https://github.com/typedclojure/typedclojure][Typed Clojure]] and [[https://github.com/clojure/spec-alpha2][Clojure Spec]] implement this functionality optionally.
