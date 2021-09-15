@@ -76,7 +76,7 @@
 
   #+BEGIN_EXPORT html
   <div class="youtube-video-container">
-    <iframe width="560" height="315" frameborder="0" src="https://www.youtube.com/embed/mYTfZeN65_s" title="YouTube video player" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
+    <iframe frameborder="0" src="https://www.youtube.com/embed/mYTfZeN65_s" title="YouTube video player" allowfullscreen>
     </iframe>
   </div>
   #+END_EXPORT
