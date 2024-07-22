@@ -2,7 +2,19 @@
 title: My First Blog Post
 subtitle: An outline of my attempt at creating my own static site generator.
 date: 2021-04-15
-tags: [programming, clojure, clojurescript, CI/CD, jamstack, tailwindcss, react, reagent, raspberry-pi, shadow-cljs]
+tags:
+  [
+    programming,
+    clojure,
+    clojurescript,
+    CI/CD,
+    jamstack,
+    tailwindcss,
+    react,
+    reagent,
+    raspberry-pi,
+    shadow-cljs
+  ]
 author: Christian Westrom
 id: first-blog-post
 ---
@@ -61,7 +73,7 @@ As someone who never delved into other CI/CD technologies, Gitlab seems to do a 
 
 # Fast Feedback
 
-The REPL is indispensible when it comes to programming. That's one of the main reasons I love clojure so much. There's nothing like typing `, e e` in spacemacs and seeing an S-expression evaluate on the spot. It just makes the process of writing code so much more enjoyable. I wanted to get fast feedback in as many areas as possible, so I'm centering my project around this goal. Shadow-cljs was an obvious choice for this. The npm support and compilation is such a breeze. To this end, I also opted to use Tailwind CSS. This allows me to write my CSS directly into my reagent components. 
+The REPL is indispensible when it comes to programming. That's one of the main reasons I love clojure so much. There's nothing like typing `, e e` in spacemacs and seeing an S-expression evaluate on the spot. It just makes the process of writing code so much more enjoyable. I wanted to get fast feedback in as many areas as possible, so I'm centering my project around this goal. Shadow-cljs was an obvious choice for this. The npm support and compilation is such a breeze. To this end, I also opted to use Tailwind CSS. This allows me to write my CSS directly into my reagent components.
 
 # To be improved
 

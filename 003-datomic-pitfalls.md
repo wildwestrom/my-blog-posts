@@ -16,7 +16,7 @@ Anyway, I went along the documentation trying to figure out how to use Datomic, 
 
 ## Where do I get Datomic in the first place?
 
-This isn't really a pitfall, so much as it was not easy for me to find this information. So when I started out, I used a library called [Datalevin](https://github.com/juji-io/datalevin), which mimics Datomic's API. It was good enough for my purposes, but it isn't quite up to par with Datomic itself. Anyway, the free version is called `com.Datomic/Datomic-free`{.verbatim}. You can add the latest version to your project by copying the info from [clojars](https://clojars.org/com.datomic/datomic-free). 
+This isn't really a pitfall, so much as it was not easy for me to find this information. So when I started out, I used a library called [Datalevin](https://github.com/juji-io/datalevin), which mimics Datomic's API. It was good enough for my purposes, but it isn't quite up to par with Datomic itself. Anyway, the free version is called `com.Datomic/Datomic-free`{.verbatim}. You can add the latest version to your project by copying the info from [clojars](https://clojars.org/com.datomic/datomic-free).
 
 ## Pitfall #1 - Schema-Data Mismatch
 

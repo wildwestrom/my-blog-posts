@@ -18,12 +18,13 @@ I figured the easiest solution would be to use a Clojure library for this. Unfor
 
 ## orgzly/org-java
 
-This parser was designed for a pretty cool android app. Check it out [here](https://github.com/orgzly/org-java). Doesn't really fit my purposes. Unfortunately, there's little to no documentation on how to use this library. I don't know how Java works so I won't be able to understand what anything does, let alone how to interop with it. 
+This parser was designed for a pretty cool android app. Check it out [here](https://github.com/orgzly/org-java). Doesn't really fit my purposes. Unfortunately, there's little to no documentation on how to use this library. I don't know how Java works so I won't be able to understand what anything does, let alone how to interop with it.
+
 ## rasendubi/uniorg
 
-This parser was written in typescript, available on npm, and parses in the same way org-mode parses. Luckily, after the original creator worked out a fatal bug, I finally got a parser that works really well! 
+This parser was written in typescript, available on npm, and parses in the same way org-mode parses. Luckily, after the original creator worked out a fatal bug, I finally got a parser that works really well!
 
-Update: 2021-7-11 I created a command line utility that converts Org documents to html and JSON or EDN, whichever you like. You can get it with a simple `npm install uniorg-util`. 
+Update: 2021-7-11 I created a command line utility that converts Org documents to html and JSON or EDN, whichever you like. You can get it with a simple `npm install uniorg-util`.
 
 Here's links to the project:
 
