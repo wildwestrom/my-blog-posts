@@ -1,14 +1,12 @@
 ---
 title: Procedural Terrain Generation in Bevy
-subtitle: TBD...
+subtitle: How I used the Bevy game engine to wire up a quick procedural terrain generator
 date: 2025-11-23
 tags: [programming]
 id: gaps-in-knowledge
 ---
 
 Procedural terrain generation is really cool. We all know how minecraft has a practically infinite world you can explore to your heart's content. I wanted to figure out how I could make some simple terrain myself, so here's how I did it.
-
-Also: Yes! I'm using Rust now. It took me awhile to get comfortable with it, but I'm having a lot of fun with Rust! I've been using it since at least 2022 by now.
 
 # Googling
 
@@ -23,6 +21,10 @@ The blog post _**Making maps with noise functions**_ from [Red Blob Games](https
 That blog post is so good in fact, that I won't spend any time explaining what I learned to you. Just go and read that post.
 
 # The Bevy project
+
+To build this, I used the Bevy game engine. You can find it at [bevy.org](https://bevy.org/).
+
+Also, if you've been following what I've been doing, yes, I'm using Rust now! It took me awhile to get comfortable with it, but I'm having a lot of fun with Rust! I've been using it since at least 2022 by now.
 
 As of the time of writing, you can use my project [`bevy_procedural_terrain_gen`](https://github.com/wildwestrom/bevy_procedural_terrain_gen) (it's a long name to avoid collisions) within your own Bevy project, and run the demo.
 
