@@ -2,7 +2,7 @@
 title: Procedural Terrain Generation in Bevy
 subtitle: How I used the Bevy game engine to wire up a quick procedural terrain generator
 date: 2025-11-23
-tags: [programming]
+tags: [programming, terrain, procedural generation]
 id: procedural-generation
 ---
 
