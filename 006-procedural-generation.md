@@ -3,7 +3,7 @@ title: Procedural Terrain Generation in Bevy
 subtitle: How I used the Bevy game engine to wire up a quick procedural terrain generator
 date: 2025-11-23
 tags: [programming]
-id: gaps-in-knowledge
+id: procedural-generation
 ---
 
 Procedural terrain generation is really cool. We all know how minecraft has a practically infinite world you can explore to your heart's content. I wanted to figure out how I could make some simple terrain myself, so here's how I did it.
