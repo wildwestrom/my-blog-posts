@@ -1,5 +1,5 @@
 ---
-title: A dive into curves and smoothness
+title: A deep dive into curves and smoothness
 subtitle: This is a deep dive into the huge rabbithole that is curves and how to make them appear smooth.
 date: 2026-03-22
 tags: [curves, mathematics]
@@ -30,7 +30,13 @@ I used to never read academic papers, until I stumbled upon Raph Levien's PhD th
 
 ## The Clothoid
 
-One section of Levien's paper discusses the history of a curve known by a few different names: Euler spiral, clothoid, Cornu spiral. One of the practical uses of this curve happens to be for railway and road engineering. The clothoid fundamentally answers the question, how does one transition between a straight line and a circular arc, two of the most simple designs one can think for a railway or roadway alignment. Why can't we just join them together? The answer lies in physics. When you are traveling along a straight line, ignoring things like wind and road conditions, there are no forces acting on your sides. When you're traveling along a circle or part of a circle (a circular arc) however, you feel a force pushing you toward the outside of the circle. This centrifugal force can be thought of as the effect of angular acceleration. So what happens when go directly from zero angular acceleration to non-zero angular acceleration? You get **jerk**.
+When designing roads, the simplest shapes to use are lines and circles. All you need are a straight edge and a compass to draw them. However, you cannot transition directly between a straight line and a circular arc. 
+
+Why can't we just join them together? The answer lies in physics. When you are traveling along a straight line, ignoring things like wind and road conditions, there are no forces acting on your sides. When you're traveling along a circle or part of a circle (a circular arc) however, you feel a force pushing you toward the outside of the circle. This centrifugal force can be thought of as the effect of angular acceleration. So what happens when go directly from zero angular acceleration to non-zero angular acceleration? You get **jerk**.
+
+![What happens when you go from straight to circular](images/Straight-circle.gif)
+
+One section of Levien's thesis is about the history of a curve known by a few different names: The Euler spiral, the clothoid, and the Cornu spiral. One of the practical uses of the clothoid happens to be for railway and road engineering. The clothoid is the answer to the question of how does one transition between a straight line and a circular arc.
 
 ### Jerk, Snap, Crackle, and Pop
 
@@ -39,6 +45,10 @@ Fundamentally, speed, acceleration, and our recently introduced "jerk" are all a
 When we talk about the rate of change of position, we call that speed or velocity. You moved over a distance between point A to point B, but how fast? That's your velocity. The rate your velocity changes is called acceleration. The rate your acceleration changes is called jerk. Physicists have quite whimsical names for some of these higher rates of change (or "derivatives" if you like calculus).
 
 ![Derivatives of position with their respective names.](images/Time_derivatives_of_position.svg.png)
+
+A [transition curve](https://en.wikipedia.org/wiki/Track_transition_curve) seeks to reduce physical forces by reducing the amount of angular velocity, angular jerk, and higher derivatives. The clothoid does this by transitioning between angular accelerations linearly.
+
+![Linear transition to a circular arc via the clothoid](images/Straight-cornu.gif)
 
 ## Other transition curves
 
