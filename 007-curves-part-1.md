@@ -42,7 +42,7 @@ When we talk about the rate of change of position, we call that speed or velocit
 
 ## Other transition curves
 
-Turns out you can keep taking derivatives of position to infinity. In engineering, usually we only worry about jerk at most, and so the clothoid has proven itself sufficient for over 100 years. There are more sophisticated transition curves, many of which are discussed in this paper: [Railway Transition Curves: A Review of the State-of-the-Art and Future Research](https://doi.org/10.3390/infrastructures5050043) In that high level overview, there are many transition curves designed to improve upon the shortcomings of the clothoid. The difficulty in engineering is that these curves must be practical to calculate and measure in the field. 
+Turns out you can keep taking derivatives of position to infinity. In engineering, usually we only worry about jerk at most, and so the clothoid has proven itself sufficient for over 100 years. There are more sophisticated transition curves, many of which are discussed in this paper: [Railway Transition Curves: A Review of the State-of-the-Art and Future Research](https://doi.org/10.3390/infrastructures5050043) In that high level overview, there are many transition curves designed to improve upon the shortcomings of the clothoid. The difficulty in engineering is that these curves must be practical to calculate and measure in the field.
 
 Rather than consider the practical constraints of engineering, I became curious as to what a mathematically perfect transition curve would look like. When I say "mathematically perfect", I don't just mean curves that look good. According to Levien, the current term for this aesthetically pleasing smoothness is called **fairness**. This is not what I was after however.
 
