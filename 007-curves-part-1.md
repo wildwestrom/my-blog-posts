@@ -30,7 +30,7 @@ I used to never read academic papers, until I stumbled upon Raph Levien's PhD th
 
 ## The Clothoid
 
-When designing roads, the simplest shapes to use are lines and circles. All you need are a straight edge and a compass to draw them. However, you cannot transition directly between a straight line and a circular arc. 
+When designing roads, the simplest shapes to use are lines and circles. All you need are a straight edge and a compass to draw them. However, you cannot transition directly between a straight line and a circular arc.
 
 Why can't we just join them together? The answer lies in physics. When you are traveling along a straight line, ignoring things like wind and road conditions, there are no forces acting on your sides. When you're traveling along a circle or part of a circle (a circular arc) however, you feel a force pushing you toward the outside of the circle. This centrifugal force can be thought of as the effect of angular acceleration. So what happens when go directly from zero angular acceleration to non-zero angular acceleration? You get **jerk**.
 
