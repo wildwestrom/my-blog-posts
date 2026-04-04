@@ -69,3 +69,5 @@ As a result of my deep-dive into curves. I discovered Raph Levien's implementati
 <https://github.com/wildwestrom/track-geometry-experiments>
 
 In the next part, we'll go deeper into my research into looking for the perfect transition curve.
+
+[Continue Here](/blog/008-curves-part-2)
