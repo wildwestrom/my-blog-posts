@@ -1,12 +1,12 @@
 ---
-title: Formally verifying the ideal transition curve 
+title: Formally verifying the ideal transition curve
 subtitle: How I went from a hunch to a proof. The clothoid minimizes the first derivative of angular acceleration. Other transition curves minimize higher derivatives. What if I could minimize all higher derivatives to infinity?
 date: 2026-04-04
 tags: [curves, mathematics]
 id: curves-part-2
 ---
 
-Here's [part 1](/blog/007-curves-part-1) if you haven't read it yet. 
+Here's [part 1](/blog/007-curves-part-1) if you haven't read it yet.
 
 In part one I talked about how I came across the idea of a transition curve and their significance to track geometry. I loved how the clothoid could connect circles and lines smoothly.
 
@@ -16,10 +16,9 @@ In the previous article I mentioned that the goal of the clothoid was to transit
 
 ## How do I go about creating a curve like this?
 
-My first idea was to try to use Desmos to plot a $$C^\infin$$ curve. Wikipedia had a good article about [smoothness](https://en.wikipedia.org/wiki/Smoothness) which helped me with the intuition. That article linked to another one about [bump functions](https://en.wikipedia.org/wiki/Bump_function), so that gave me a good starting point for how to create these kinds of curves. 
+My first idea was to try to use Desmos to plot a $$C^\infin$$ curve. Wikipedia had a good article about [smoothness](https://en.wikipedia.org/wiki/Smoothness) which helped me with the intuition. That article linked to another one about [bump functions](https://en.wikipedia.org/wiki/Bump_function), so that gave me a good starting point for how to create these kinds of curves.
 
 I remebered the derivative of the exponential function was just the exponential function, so I figured I could start with a bump function exactly like the one from the Wikipedia article.
-
 
 $$
 f(x)={
@@ -71,7 +70,7 @@ $$
 <iframe src="https://www.desmos.com/calculator/xgswj1i9l1?embed" width="640" height="480" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 The next thing to do was normalize it. I figured I could take the maximum (which just means setting the upper bound on the integral to any value
-$$\ge 1$$) and then dividing $$g(x)$$ by that value. This gives us the final shape function $$h(x)$$. 
+$$\ge 1$$) and then dividing $$g(x)$$ by that value. This gives us the final shape function $$h(x)$$.
 
 $$
 C = \int_{0}^{1} f(t) dt
@@ -89,13 +88,13 @@ $$
 \kappa(s)=R_1 + \Delta R \cdot h\left(\frac{s}{L}\right)
 $$
 
-where:  
+where:
+
 - $$s$$ = arc length parameter with $$0 \le s \le L$$
 - $$L$$ = total length of the transition curve
-- $$R_1$$ = initial curve radius 
-- $$R_2$$ = final curve radius 
+- $$R_1$$ = initial curve radius
+- $$R_2$$ = final curve radius
 - $$\Delta R := R_2 - R_1$$ = change in curvature
-
 
 ## Am I just fooling myself?
 
@@ -109,13 +108,13 @@ I needed to prove four properties of the shape function $$h(x)$$.
 
 1. Global $$C^\infty$$ smoothness for all real numbers.
 2. Boundary values: $$ h(x) = \begin{cases}
-	0,&
-	x \le 0\\
-	1,&
-	x \ge 1
-\end{cases} $$
+   0,&
+   x \le 0\\
+   1,&
+   x \ge 1
+   \end{cases} $$
 3. Monotonicity along the shape function from $$[0,1]$$  
-  (Increasing if $$\Delta R \gt 0$$ and decreasing if $$\Delta R \lt 0$$).
+   (Increasing if $$\Delta R \gt 0$$ and decreasing if $$\Delta R \lt 0$$).
 4. All derivatives vanish to zero at the endpoints.
 
 These four properties, combined with global smoothness of $$h$$, imply that for all $$s \in \mathbb{R}$$ any arbitrary higher derivative of $$\kappa(s)$$ will be zero when $$s=0$$ or $$s=L$$.
