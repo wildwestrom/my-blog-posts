@@ -103,11 +103,11 @@ To be honest, a lot of the development of this curve was helped by using LLMs. T
 
 There's no way in hell I was going to try to prove the properties of the curve I wanted to manually. I make stupid mistakes all the time, and then I'd have to convince somebody better at math than me to check it. That's when I discovered proof assistants.
 
-Proof assistants seemed too good to be true, but apparently they're widely used. Mathematiticians use Lean to help check their proofs, so I figured something relatively trivial like the properties of my curve could be checked in Lean as well.
+Proof assistants seemed too good to be true, but apparently provers like Lean 4 are widely used by mathematiticians to help check their proofs. I figured something relatively trivial like the properties of my curve could be checked in Lean as well.
 
 I needed to prove four properties of the shape function $$h(x)$$.
 
-1. Global $$C^\infty$$ smoothness on all of $$\mathbb{R}$$.
+1. Global $$C^\infty$$ smoothness for all real numbers.
 2. Boundary values: $$ h(x) = \begin{cases}
 	0,&
 	x \le 0\\
@@ -126,7 +126,7 @@ No, I used LLMs.
 
 ## Vibe Proving
 
-Turns out all I had to do was understand just enough Lean to know if the final theorem is what I intend it to be, and then let the LLM fill in the rest. There is a pair of keywords in lean called `sorry` and `admit`. These keywords basically tell the proof assistant "trust me bro" and won't complain that you haven't proven the statements you're asserting.
+Turns out, all I had to do was understand just enough Lean to know if the final theorem is what I intend it to be, and then let the LLM fill in the rest. There is a pair of keywords in lean called `sorry` and `admit`. These keywords basically tell the proof assistant "trust me bro" and won't complain that you haven't proven the statements you're asserting.
 
 ```lean
 def κ (s R L : ℝ) : ℝ :=
@@ -137,10 +137,10 @@ theorem κ_is_C_inf (R L : ℝ) : ContDiffOn ℝ ∞ (fun s => κ s R L) unitInt
     admit
 ```
 
-After spending many weeks using GPT-5 in Cursor, probably burning over $100 in tokens, I managed to actually get it to prove my curve was $$C^\infty$$ continuous. Once new smarter models came out, I could refactor the proof a lot and I ended up with the version that's now up on GitHub.
+After burning over $100 in tokens over the course of a few weeks, using GPT-5 in Cursor, I managed to prove my curve was $$C^\infty$$ continuous. Once new smarter models came out, I could refactor the proof a lot and I ended up with the version that's now up on GitHub.
 
 <https://github.com/wildwestrom/smoothstep-curve-proof>
 
-Turns out as long as your assertion is what you think it is, you can just let the LLM generate whatever it wants until the prover is happy. I talked about this with some users of Lean on Slack, and they pretty much confirmed this is true.
+In the end, as long as your assertion is what you think it is, you can just let the LLM generate whatever it wants until the prover is happy. I talked about this with some users of Lean on Slack, and they pretty much agreed with me.
 
 Right now, the proof is complete. The next step is to figure out how to actually calculate cartesian coordinates for these curves, but that's another rabbit hole for another article.
