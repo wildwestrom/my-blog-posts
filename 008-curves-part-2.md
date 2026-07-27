@@ -11,7 +11,7 @@ Here's [part 1](/blog/007-curves-part-1) if you haven't read it yet.
 In part one I talked about how I came across the idea of a transition curve and their significance to track geometry. I loved how the clothoid could connect circles and lines smoothly.
 
 <iframe src="https://www.desmos.com/calculator/cyddnvk61t?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
- 
+
 In the previous article I mentioned that the goal of the clothoid was to transition between curvatures linearly. 'Linearly' is the key word here. This means that even if we reduce angular jerk, then we still have to deal with the same problem for its derivative, snap. There are in fact transition curves that reduce angular snap as well, but what if I could control all derivatives up to infinity?
 
 ## How do I go about creating a curve like this?
